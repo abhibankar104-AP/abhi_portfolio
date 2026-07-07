@@ -45,7 +45,7 @@
     "title": "Weather App",
     "description": "Real-time weather forecast app with animated UI and location-based updates.",
     "tech": ["JavaScript", "API", "HTML"],
-    "live": "#",
-    "github": "#"
+    "live": "https://weather-visualized.netlify.app/",
+    "github": "https://github.com/vaibhavsase/weather-app"
   }
 ]
