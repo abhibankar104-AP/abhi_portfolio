@@ -1,72 +1,424 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Vaishnavi Tekale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Abhishek Bankar</title>
+
   <link rel="stylesheet" href="contact.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 
 <body>
 
-  <header class="header">
-    <h1>Contact Me</h1>
-    <nav>
+  <!-- Ambient Background -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+
+      <span class="brand-text">
+        ABHISHEK
+        <small>BANKAR</small>
+      </span>
+    </a>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
+
+    <a href="resume.pdf" class="resume-btn" target="_blank">
+      <span>Resume</span>
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
   </header>
 
-  <section class="contact-section">
-    <!-- ✅ Web3Forms Integration -->
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
-      <h2 class="section-heading">Get In Touch</h2>
 
-      <!-- Hidden Access Key -->
-      <input type="hidden" name="access_key" value="c590d433-7bf5-4bac-8db4-90035ae59226">
+  <!-- ================= CONTACT SECTION ================= -->
+  <main>
 
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="email" placeholder="E-mail" required />
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <section class="contact-section">
 
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/vaishnavi-tekale-b494872a6/" target="_blank" aria-label="LinkedIn">
-        <img src="images/linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/Vaishnavitekale" target="_blank" aria-label="GitHub">
-        <img src="images/github.svg" alt="GitHub" />
-      </a>
-      <!-- <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
-        <img src="images/instagram.svg" alt="Instagram" /> -->
-      </a>
+      <!-- Section Heading -->
+      <div class="contact-heading">
+
+        <span class="eyebrow">
+          <span></span>
+          LET'S CONNECT
+        </span>
+
+        <h1>
+          Get In <span>Touch.</span>
+        </h1>
+
+        <p>
+          Have a project, opportunity, or simply want to say hello?
+          I'd love to hear from you.
+        </p>
+
+      </div>
+
+
+      <!-- Contact Layout -->
+      <div class="contact-wrapper">
+
+        <!-- ================= LEFT SIDE ================= -->
+        <div class="contact-info">
+
+          <div class="info-intro">
+            <span class="mini-label">CONTACT</span>
+
+            <h2>
+              Let's create something
+              <span>remarkable.</span>
+            </h2>
+
+            <p>
+              Whether you're looking to collaborate, discuss an idea,
+              or explore a new opportunity, feel free to reach out.
+            </p>
+          </div>
+
+
+          <!-- Decorative Line -->
+          <div class="gold-line"></div>
+
+
+          <!-- Social Links -->
+          <div class="social-section">
+
+            <span class="mini-label">FIND ME ONLINE</span>
+
+            <div class="social-icons">
+
+              <a
+                href="https://www.linkedin.com/in/abhi-bankar-5b20b2387/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="social-card"
+              >
+                <div class="social-icon">
+                  <img src="images/linkedin.svg" alt="LinkedIn" />
+                </div>
+
+                <div class="social-text">
+                  <span>LinkedIn</span>
+                  <small>Connect with me</small>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+
+              <a
+                href="https://github.com/Vaishnavitekale"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="social-card"
+              >
+                <div class="social-icon">
+                  <img src="images/github.svg" alt="GitHub" />
+                </div>
+
+                <div class="social-text">
+                  <span>GitHub</span>
+                  <small>Explore my work</small>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE / FORM ================= -->
+        <div class="form-card">
+
+          <div class="form-top">
+
+            <span class="form-number">01</span>
+
+            <div>
+              <span class="mini-label">SEND A MESSAGE</span>
+              <h2>Start a conversation</h2>
+            </div>
+
+          </div>
+
+
+          <!-- Web3Forms Integration -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form"
+            id="contact-form"
+          >
+
+            <!-- Hidden Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="74c66f53-e6ca-4372-be53-0b55d24c98d8"
+            >
+
+
+            <!-- Name -->
+            <div class="input-group">
+
+              <label for="name">Your Name</label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-regular fa-user"></i>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+
+              </div>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="input-group">
+
+              <label for="email">Email Address</label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+
+              </div>
+
+            </div>
+
+
+            <!-- Message -->
+            <div class="input-group">
+
+              <label for="message">Your Message</label>
+
+              <div class="input-wrapper textarea-wrapper">
+
+                <i class="fa-regular fa-message"></i>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me a little about your project or idea..."
+                  required
+                ></textarea>
+
+              </div>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit" class="send-btn">
+
+              <span>Send Message</span>
+
+              <div class="send-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand">
+          <span class="brand-mark">A</span>
+
+          <span class="brand-text">
+            ABHISHEK
+            <small>BANKAR</small>
+          </span>
+        </a>
+
+        <p>
+          Designing experiences.<br />
+          Building meaningful things.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <span class="mini-label">NAVIGATION</span>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <span class="mini-label">SOCIAL</span>
+
+        <div class="footer-social-links">
+
+          <a
+            href="https://www.linkedin.com/in/abhi-bankar-5b20b2387/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://github.com/Vaishnavitekale"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
-  </section>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Abhishek Banakr. All rights reserved.
+      </span>
+
+      <span class="footer-line"></span>
+
+      <span>
+        Crafted with precision.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= FORM SCRIPT ================= -->
+  <script>
+
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', (e) => {
+
+      e.preventDefault();
+
+      const button = form.querySelector('.send-btn');
+      const buttonText = button.querySelector('span');
+      const buttonIcon = button.querySelector('i');
+
+      buttonText.textContent = 'Sending...';
+      buttonIcon.className = 'fa-solid fa-spinner fa-spin';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+
+        if (response.ok) {
+
+          alert('Message sent successfully! Thank You.');
+
+          form.reset();
+
+          buttonText.textContent = 'Message Sent';
+          buttonIcon.className = 'fa-solid fa-check';
+
+          setTimeout(() => {
+
+            buttonText.textContent = 'Send Message';
+            buttonIcon.className = 'fa-solid fa-arrow-right';
+
+          }, 2500);
+
+        } else {
+
+          alert('Something went wrong! Please try again.');
+
+          buttonText.textContent = 'Send Message';
+          buttonIcon.className = 'fa-solid fa-arrow-right';
+
+        }
+
+      })
+      .catch(() => {
+
+        alert('Network Problem!! Try again.');
+
+        buttonText.textContent = 'Send Message';
+        buttonIcon.className = 'fa-solid fa-arrow-right';
+
+      });
+
+    });
+
+  </script>
 
 </body>
-
-<script>
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(response => {
-      if (response.ok) {
-        alert('Message sent successfully! Thank You.');
-        form.reset();
-      } else {
-        alert('Something went wrong! Please try again.');
-      }
-    }).catch(() => {
-      alert('Network Problem!! Try again.');
-    });
-  });
-</script>
 
 </html>

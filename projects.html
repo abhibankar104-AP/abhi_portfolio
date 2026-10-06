@@ -1,50 +1,351 @@
+
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Vaishnavi Tekale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Abhishek Bankar</title>
+
   <link rel="stylesheet" href="projects.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 </head>
+
 <body>
 
+  <!-- =========================
+       PREMIUM NAVBAR
+       ========================= -->
+
   <header class="header">
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- 🔍 Search + Filter -->
-  <div class="project-controls">
+    <div class="nav-container">
 
-    <input
-      type="text"
-      id="project-search"
-      placeholder="Search projects by name / tech..."
-    />
+      <a href="index.html" class="brand">
 
-    <div class="filter-wrapper">
-      <button class="filter-toggle">⚙️ Filter</button>
+        <span class="brand-mark">A</span>
 
-      <div class="filter-options">
-        <button data-tech="all" class="active">All</button>
-        <button data-tech="HTML">HTML</button>
-        <button data-tech="CSS">CSS</button>
-        <button data-tech="JavaScript">JavaScript</button>
-        <button data-tech="Python">Python</button>
-        <button data-tech="Firebase">Firebase</button>
-      </div>
+        <span class="brand-name">
+          Abhishek<span>.</span>
+        </span>
+
+      </a>
+
+
+      <nav class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="projects.html" class="active">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <a
+        href="resume.pdf"
+        target="_blank"
+        class="nav-resume"
+      >
+        Resume
+
+        <i class="fas fa-arrow-up-right-from-square"></i>
+
+      </a>
+
     </div>
 
-  </div>
+  </header>
 
-  <section class="projects-section">
-    <div class="projects-container" id="projects-container"></div>
-  </section>
+
+  <!-- =========================
+       AMBIENT LIGHT
+       ========================= -->
+
+  <div class="ambient ambient-one"></div>
+
+  <div class="ambient ambient-two"></div>
+
+
+  <!-- =========================
+       PROJECTS PAGE
+       ========================= -->
+
+  <main>
+
+    <section class="projects-section">
+
+
+      <!-- =========================
+           SECTION INTRO
+           ========================= -->
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+
+          <span></span>
+
+          SELECTED WORK
+
+        </span>
+
+
+        <h1>
+          My <span>Projects.</span>
+        </h1>
+
+
+        <p>
+          A collection of things I've built, explored and experimented with.
+        </p>
+
+      </div>
+
+
+      <!-- =========================
+           SEARCH + FILTER
+           ========================= -->
+
+      <div class="project-controls">
+
+
+        <div class="search-box">
+
+          <i class="fas fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="project-search"
+            placeholder="Search projects..."
+          />
+
+        </div>
+
+
+        <div class="filter-wrapper">
+
+          <button class="filter-toggle">
+
+            <i class="fas fa-sliders"></i>
+
+            <span>Filter</span>
+
+            <i class="fas fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="filter-options">
+
+            <button
+              data-tech="all"
+              class="active"
+            >
+              All Projects
+            </button>
+
+            <button data-tech="HTML">
+              HTML
+            </button>
+
+            <button data-tech="CSS">
+              CSS
+            </button>
+
+            <button data-tech="JavaScript">
+              JavaScript
+            </button>
+
+            <button data-tech="Python">
+              Python
+            </button>
+
+            <button data-tech="Firebase">
+              Firebase
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           PROJECT GRID
+           ========================= -->
+
+      <div
+        class="projects-container"
+        id="projects-container"
+      ></div>
+
+
+      <!-- Empty state can be controlled by JS -->
+
+      <div
+        id="empty-projects"
+        class="empty-projects"
+      >
+
+        <i class="fas fa-folder-open"></i>
+
+        <h3>
+          No projects found
+        </h3>
+
+        <p>
+          Try another search or technology filter.
+        </p>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       PREMIUM FOOTER
+       ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+
+      <div class="footer-brand">
+
+        <a
+          href="index.html"
+          class="brand footer-logo"
+        >
+
+          <span class="brand-mark">
+            A
+          </span>
+
+          <span class="brand-name">
+            ABHISHEK<span>.</span>
+          </span>
+
+        </a>
+
+
+        <p>
+          Designing. Developing. Creating digital experiences.
+        </p>
+
+      </div>
+
+
+      <div class="footer-navigation">
+
+        <span class="footer-label">
+          NAVIGATE
+        </span>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <span class="footer-label">
+          CONNECT
+        </span>
+
+
+        <div class="social-links">
+
+          <a
+            href="#"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+
+          <a
+            href="https://www.linkedin.com/in/abhi-bankar-5b20b2387/"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+
+          <a
+            href="#"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Abhishek Bankar. All rights reserved.
+      </span>
+
+      <span>
+        Built with
+        <i class="fas fa-code"></i>
+        &amp; curiosity.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       PROJECT JAVASCRIPT
+       ========================= -->
 
   <script src="projects.js"></script>
+
 </body>
+
 </html>
+

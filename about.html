@@ -1,55 +1,338 @@
+
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me | Vaishnavi Tekale</title>
+
+  <title>About Me | Abhishek Bankar</title>
+
   <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 </head>
+
 <body>
 
+  <!-- =========================
+       PREMIUM NAVBAR
+       ========================= -->
+
   <header class="header">
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+    <div class="nav-container">
+
+      <a href="index.html" class="brand">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Abhishek<span>.</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+
+        <a href="about.html" class="active">About</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="resume.pdf" target="_blank" class="nav-resume">
+        Resume
+        <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+
+    </div>
+
   </header>
 
-  <section class="about-section">
-    <div class="about-container">
-      
-      <div class="about-info">
-        <ul class="info-list">
-          <li><i class="fas fa-briefcase"></i> Software Engineer</li>
-          <li><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</li>
-          <li><i class="fas fa-envelope"></i> vaishnavitekale656@gmail.com</li>
-          <li><i class="fas fa-birthday-cake"></i> 2 may 2004 </li>
-          <li><i class="fas fa-phone-alt"></i> +91 9421315625</li>
-          <li><i class="fas fa-hourglass-half"></i> Age: 22</li>
-          <li><i class="fas fa-globe"></i> www.vaishnavi.dev</li>
-          <li><i class="fas fa-graduation-cap"></i> B.E. (IT)</li>
-        </ul>
+
+  <!-- =========================
+       BACKGROUND EFFECTS
+       ========================= -->
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+
+  <!-- =========================
+       ABOUT SECTION
+       ========================= -->
+
+  <main>
+
+    <section class="about-section">
+
+      <!-- Section Heading -->
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          <span></span>
+          GET TO KNOW ME
+        </span>
+
+        <h1>
+          About <span>Me.</span>
+        </h1>
+
+        <p>
+          A little insight into the person behind the code.
+        </p>
+
       </div>
-      <div class="about-image">
-        <img src="images/vaishnaviprofbl.png" alt="Vaishnavi Tekale" />
+
+
+      <!-- Main About Container -->
+
+      <div class="about-container">
+
+
+        <!-- =========================
+             INFORMATION
+             ========================= -->
+
+        <div class="about-info">
+
+          <div class="info-header">
+
+            <span class="small-label">
+              PROFILE
+            </span>
+
+            <h2>
+              Building ideas<br>
+              into <span>digital reality.</span>
+            </h2>
+
+          </div>
+
+
+          <ul class="info-list">
+
+            <li>
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <small>Role</small>
+                <strong>Software Engineer</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <small>Location</small>
+                <strong>Nagar, Maharashtra</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <small>Email</small>
+                <strong>abhibankar@gmail.com</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-birthday-cake"></i>
+              <div>
+                <small>Birthday</small>
+                <strong>2 May 2004</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <small>Phone</small>
+                <strong>+91 9511217988</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-hourglass-half"></i>
+              <div>
+                <small>Age</small>
+                <strong>22 Years</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-globe"></i>
+              <div>
+                <small>Website</small>
+                <strong>www.abhi.dev</strong>
+              </div>
+            </li>
+
+            <li>
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <small>Education</small>
+                <strong>B.Cs</strong>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- =========================
+             PROFILE IMAGE
+             ========================= -->
+
+        <div class="about-image">
+
+          <div class="image-frame">
+
+            <div class="image-corner corner-top"></div>
+            <div class="image-corner corner-bottom"></div>
+
+            <img
+              src="images/abhi.png"
+              alt="Abhishek Bankar"
+            />
+
+          </div>
+
+          <div class="image-caption">
+            <span>SOFTWARE ENGINEER</span>
+            <span class="caption-dot"></span>
+            <span>INDIA</span>
+          </div>
+
+        </div>
+
       </div>
+
+
+      <!-- =========================
+           DESCRIPTION
+           ========================= -->
+
+      <div class="about-description">
+
+        <div class="description-line"></div>
+
+        <p>
+          I'm a passionate software engineer with expertise in frontend and
+          mobile app development. I love building elegant, responsive web
+          and mobile applications using technologies like Java, Python,
+          Spring Boot, JDBC, Hibernate, Servlet, JavaScript, Flutter, HTML,
+          CSS, and Firebase. I focus on creating clean UI/UX and solving
+          real-world problems with code.
+        </p>
+
+        <div class="description-actions">
+
+          <a
+            href="resume.pdf"
+            target="_blank"
+            class="resume-buttons"
+          >
+            <span>View Resume</span>
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+
+          <a
+            href="projects.html"
+            class="explore-link"
+          >
+            Explore my work
+            <i class="fas fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       PREMIUM FOOTER
+       ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand footer-logo">
+          <span class="brand-mark">A</span>
+          <span class="brand-name">
+            ABHISHEK<span>.</span>
+          </span>
+        </a>
+
+        <p>
+          Designing. Developing. Creating digital experiences.
+        </p>
+
+      </div>
+
+
+      <div class="footer-navigation">
+
+        <span class="footer-label">NAVIGATE</span>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <span class="footer-label">CONNECT</span>
+
+        <div class="social-links">
+
+          <a href="#" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/abhi-bankar-5b20b2387/" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="about-description">
-      <p>
-        I'm a passionate software engineer with expertise in frontend and mobile app development.
-        I love building elegant, responsive web and mobile applications using technologies like
-        Java, Python, Spring boot, JDBC, Hybernet, Servelet, javascript Flutter, HTML, CSS, and Firebase. I focus on creating clean UI/UX and solving real-world problems with code.
-      </p>
 
-      <div class="resume-buttons">
-        <a href="resume.pdf" target="_blank" class="btn-resume">📄 View Resume</a>
-      </div>
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Abhishek Bankar. All rights reserved.
+      </span>
+
+      <span>
+        Built with <i class="fas fa-code"></i> &amp; curiosity.
+      </span>
+
     </div>
-  </section>
+
+  </footer>
+
 
 </body>
 </html>
+
